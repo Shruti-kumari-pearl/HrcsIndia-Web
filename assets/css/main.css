@@ -121,6 +121,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
+
 @media (min-width: 1200px) {
     .navmenu {
         padding: 0;
@@ -210,18 +211,21 @@ h6 {
             border-radius: 4px;
             z-index: 99;
             box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+       
+           
         }
 
             .navmenu .dropdown ul li {
-                min-width: 200px;
+                min-width: 180px;
             }
 
             .navmenu .dropdown ul a {
-                padding: 10px 20px;
-                font-size: 15px;
+                padding: 8px 10px;
+                font-size: 10px;
                 text-transform: none;
-                font-weight: 400;
+                font-weight: 600;
                 color: var(--nav-dropdown-color);
+                overflow-x: auto;
             }
 
                 .navmenu .dropdown ul a i {
