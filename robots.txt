@@ -1,0 +1,58 @@
+#robots.txt for https://hrcsindia.com
+
+# Block all web crawlers from accessing the admin area and sensitive sections
+User-agent: *
+Disallow: /admin/
+Disallow: /user-profile/
+Disallow: /internal-reports/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cgi-bin/
+
+# Allow crawlers to access public areas
+Allow: /properties/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /public/
+
+# Block specific file types from being indexed
+User-agent: *
+Disallow: /*.pdf$
+Disallow: /*.doc$7
+Disallow: /*.docx$
+Disallow: /*.xls$
+Disallow: /*.xlsx$
+Disallow: /*.ppt$
+Disallow: /*.pptx$
+
+# Allow all robots complete access to the blog section
+User-agent: *
+Allow: /blog/
+
+# Allow all robots complete access to the sitemap
+Sitemap: https://hrcsindia.com/sitemap.xml
+
+# Slow down the crawl rate for all crawlers to reduce server load
+User-agent: *
+Crawl-delay: 10
+
+# Specific rules for Googlebot
+User-agent: Googlebot
+Disallow: /no-googlebot/
+
+# Specific rules for Bingbot
+User-agent: Bingbot
+Disallow: /no-bingbot/
+
+
+
+
+
+
+
+
+
+
+
+
